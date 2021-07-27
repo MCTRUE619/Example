@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:orientation="vertical">
+
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="310dp"
+        android:layout_height="496dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="-22dp"
+        android:background="@null"
+        app:layout_constraintBottom_toTopOf="@+id/textView4"
+        app:layout_constraintStart_toStartOf="@+id/frameLayout2"
+        android:src="@drawable/girl"
+        android:fitsSystemWindows="true"/>
+    <ImageView
+        android:id="@+id/imageView"
+        android:background="@null"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="98dp"
+        android:layout_marginTop="-430dp"
+        android:src="@drawable/logo2"/>
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="188dp"
+        android:layout_height="30dp"
+        android:layout_marginLeft="93dp"
+        android:layout_marginTop="430dp"
+        android:layout_marginRight="94dp"
+        android:fontFamily="sans-serif-condensed"
+        android:lineHeight="30.29dp"
+        android:text="Хотите к нам?"
+        android:textColor="@color/slider"
+        android:textFontWeight="700"
+        android:textSize="28sp"
+        android:textStyle="normal" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="324dp"
+        android:layout_height="34dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="6dp"
+        android:fontFamily="sans-serif"
+        android:gravity="center_horizontal"
+        android:text="На нашем сайте вы сможете создать собственый ресторан и управлять им"
+        android:textAlignment="center"
+        android:textColor="@color/slider2"
+        android:textFontWeight="400"
+        android:textSize="12sp"
+        android:textStyle="normal" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="275dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="45dp"
+        android:background="@drawable/rectangle"
+        android:fontFamily="sans-serif"
+        android:gravity="center_horizontal"
+        android:paddingTop="10dp"
+        android:paddingBottom="15dp"
+        android:text="Перейти на aspire.ua"
+        android:textAlignment="center"
+        android:textColor="@color/slider2"
+        android:textFontWeight="500"
+        android:textStyle="normal" />
+
+
+</LinearLayout>

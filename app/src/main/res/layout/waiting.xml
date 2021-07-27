@@ -1,0 +1,331 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite">
+
+    <TextView
+        android:id="@+id/textViewnumb"
+        android:layout_width="wrap_content"
+        android:layout_height="18dp"
+        android:layout_marginTop="20dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:fontFamily="sans-serif"
+        android:letterSpacing="0.02"
+        android:lineHeight="16.23dp"
+        android:text="Заказ №1234"
+        android:textColor="@color/textDark"
+        android:textFontWeight="700"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView28"
+        android:layout_width="20.25dp"
+        android:layout_height="16.25dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="20dp"
+        android:onClick="back"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/arrow2"
+        tools:ignore="VectorDrawableCompat" />
+
+    <ScrollView
+        android:id="@+id/scroll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView31"
+        tools:ignore="MissingConstraints">
+
+        <com.google.android.flexbox.FlexboxLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:justifyContent="center"
+            app:alignItems="center"
+            app:flexDirection="column"
+            android:paddingBottom="65dp"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:layout_width="332dp"
+                android:layout_height="3dp"
+                android:layout_marginLeft="22dp"
+                android:layout_marginTop="40dp"
+                android:background="#F0F0F0" />
+            <com.google.android.flexbox.FlexboxLayout
+                android:id="@+id/flexwait"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:justifyContent="center"
+                app:alignItems="center"
+                app:flexDirection="column"
+                app:layout_alignSelf="center"
+                app:layout_constraintTop_toTopOf="parent">
+
+
+
+            </com.google.android.flexbox.FlexboxLayout>
+
+
+
+            <RelativeLayout
+                android:layout_width="150dp"
+                android:layout_height="13dp"
+                android:layout_marginTop="25dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/flexwait">
+
+                <TextView
+                    android:id="@+id/textView43"
+                    android:layout_width="133dp"
+                    android:layout_height="13dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:fontFamily="sans-serif"
+                    android:lineHeight="12.98dp"
+                    android:text="Посмотреть весь заказ"
+                    android:textColor="#959595"
+                    android:textFontWeight="400"
+                    android:textSize="12sp"
+                    android:textStyle="normal" />
+
+                <ImageView
+                    android:id="@+id/imageView32"
+                    android:layout_width="12dp"
+                    android:layout_height="5.42dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="136dp"
+                    android:layout_marginTop="6dp"
+                    app:srcCompat="@drawable/down_arrow"
+                    tools:ignore="VectorDrawableCompat" />
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="332dp"
+                android:layout_height="2dp"
+                android:layout_marginLeft="22dp"
+                android:layout_marginTop="17dp"
+                android:background="#F0F0F0" />
+
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/cont1"
+                    android:layout_width="275dp"
+                    android:layout_height="80dp"
+                    android:layout_marginTop="32dp"
+                    android:layout_marginLeft="50dp"
+                    android:background="@drawable/layout6"
+                    android:layout_alignParentTop="true">
+
+                    <ImageView
+                        android:id="@+id/car1"
+                        android:layout_width="38dp"
+                        android:layout_height="38dp"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginStart="18dp"
+                        android:layout_marginTop="21dp"
+                        android:background="@drawable/ic_third_stage_red" />
+
+                    <TextView
+                        android:id="@+id/gotov"
+                        android:layout_width="126dp"
+                        android:layout_height="17dp"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginStart="74dp"
+                        android:layout_marginTop="33dp"
+                        android:fontFamily="sans-serif-condensed"
+                        android:lineHeight="15.15dp"
+                        android:text="Заказ готовится"
+                        android:textColor="@color/slider"
+                        android:textFontWeight="400"
+                        android:textSize="14sp"
+                        android:textStyle="normal" />
+
+                    <TextView
+                        android:id="@+id/timecook"
+                        android:layout_width="wrap_content"
+                        android:layout_height="16dp"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginStart="225dp"
+                        android:layout_marginTop="33dp"
+                        android:fontFamily="sans-serif"
+                        android:letterSpacing="0.02"
+                        android:lineHeight="14.06dp"
+                        android:text="12:10"
+                        android:textColor="@color/colorApplication"
+                        android:textFontWeight="700"
+                        android:textSize="13sp"
+                        android:textStyle="normal" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/cont2"
+                    android:layout_width="275dp"
+                    android:layout_height="80dp"
+                    android:layout_marginTop="129dp"
+                    android:layout_marginLeft="50dp"
+                    android:background="@drawable/layout5"
+                    android:layout_alignParentTop="true">
+
+                    <ImageView
+                        android:id="@+id/car2"
+                        android:layout_width="38dp"
+                        android:layout_height="38dp"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginStart="18dp"
+                        android:layout_marginTop="21dp"
+                        android:background="@drawable/truck_1" />
+
+                    <TextView
+                        android:id="@+id/edet"
+                        android:layout_width="126dp"
+                        android:layout_height="17dp"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginStart="74dp"
+                        android:layout_marginTop="33dp"
+                        android:fontFamily="sans-serif-condensed"
+                        android:lineHeight="15.15dp"
+                        android:text="Ожидается"
+                        android:textColor="@color/textSilver"
+                        android:textFontWeight="500"
+                        android:textSize="14sp"
+                        android:textStyle="normal" />
+
+                    <TextView
+                        android:id="@+id/timerun"
+                        android:layout_width="wrap_content"
+                        android:layout_height="16dp"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginStart="225dp"
+                        android:layout_marginTop="33dp"
+                        android:fontFamily="sans-serif"
+                        android:letterSpacing="0.02"
+                        android:lineHeight="14.06dp"
+                        android:text="12:10"
+                        android:textColor="@color/textSilver"
+                        android:textFontWeight="700"
+                        android:textSize="13sp"
+                        android:textStyle="normal" />
+                </RelativeLayout>
+
+
+                <ImageView
+                    android:id="@+id/z3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="60.4dp"
+                    android:layout_marginLeft="4.4dp"
+                    app:srcCompat="@drawable/ic_third_done"/>
+                <ImageView
+                    android:id="@+id/z2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="60dp"
+                    android:layout_marginLeft="4.4dp"
+                    app:srcCompat="@drawable/ic_second_done" />
+                <ImageView
+                    android:id="@+id/z1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="61dp"
+                    android:layout_marginLeft="4.4dp"
+                    app:srcCompat="@drawable/ic_basic_done" />
+
+                <ImageView
+                    android:id="@+id/t3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="163.4dp"
+                    android:layout_marginLeft="4.6dp"
+                    app:srcCompat="@drawable/ic_third_done"/>
+                <ImageView
+                    android:id="@+id/t2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="163dp"
+                    android:layout_marginLeft="4.6dp"
+                    app:srcCompat="@drawable/ic_second_done" />
+                <ImageView
+                    android:id="@+id/t1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="163dp"
+                    android:layout_marginLeft="5dp"
+                    app:srcCompat="@drawable/ic_basic_done" />
+
+            </RelativeLayout>
+
+
+            <TextView
+                android:layout_width="332dp"
+                android:layout_height="2dp"
+                android:layout_marginTop="30dp"
+                android:background="#F0F0F0" />
+
+
+
+            <RelativeLayout
+                android:layout_width="338dp"
+                android:layout_height="22dp"
+                android:layout_marginTop="21dp">
+
+                <TextView
+                    android:layout_width="125dp"
+                    android:layout_height="22dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:fontFamily="sans-serif-condensed"
+                    android:lineHeight="19.47dp"
+                    android:text="Сумма заказа:"
+                    android:textColor="@color/slider2"
+                    android:textFontWeight="700"
+                    android:textSize="18sp"
+                    android:textStyle="normal" />
+
+                <TextView
+                    android:id="@+id/sumazakazawait"
+                    android:layout_width="wrap_content"
+                    android:layout_height="22dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="260dp"
+                    android:fontFamily="sans-serif-condensed"
+                    android:lineHeight="19.47dp"
+                    android:text="12350грн"
+                    android:textColor="@color/slider2"
+                    android:textFontWeight="700"
+                    android:textSize="18sp"
+                    android:textStyle="normal" />
+            </RelativeLayout>
+
+        </com.google.android.flexbox.FlexboxLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

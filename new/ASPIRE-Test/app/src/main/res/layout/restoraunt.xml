@@ -1,0 +1,492 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/app_bar_layout"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FAFAFA"
+        android:fitsSystemWindows="true">
+
+        <com.google.android.material.appbar.CollapsingToolbarLayout
+            android:id="@+id/collapsing_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:contentScrim="#FAFAFA"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed">
+
+            <com.google.android.flexbox.FlexboxLayout
+                android:id="@+id/frameLayout"
+                android:layout_width="match_parent"
+                android:layout_height="24dp"
+                android:elevation="5dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                app:flexDirection="row"
+                app:flexWrap="nowrap"
+                app:justifyContent="space_between"
+                app:layout_alignSelf="center">
+
+                <ImageView
+                    android:id="@+id/imageView28"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:onClick="openRestaurantMenu"
+                    app:srcCompat="@drawable/arrow2"
+                    tools:ignore="VectorDrawableCompat" />
+
+                <FrameLayout
+                    android:layout_width="72dp"
+                    android:layout_height="24dp">
+
+                    <ImageButton
+                        android:id="@+id/imageButton3"
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:background="@color/white"
+                        app:srcCompat="@drawable/com"
+                        tools:ignore="VectorDrawableCompat" />
+
+                    <ImageButton
+                        android:id="@+id/imageButton5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="45dp"
+                        android:background="@color/colorWhite"
+                        android:clickable="true"
+                        android:onClick="likeClick"
+                        android:tag="false"
+                        app:srcCompat="@drawable/ic_heart_black"
+                        tools:ignore="VectorDrawableCompat" />
+                </FrameLayout>
+
+            </com.google.android.flexbox.FlexboxLayout>
+
+            <com.denzcoskun.imageslider.ImageSlider
+                android:id="@+id/viewPager3"
+                android:layout_width="343dp"
+                android:layout_height="186dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="30dp"
+                app:delay="0"
+                app:error_image="@drawable/ic_dark_tort"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/frameLayout"
+                app:placeholder="@drawable/layout5" />
+            <!--<androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="343dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="300dp">
+
+                <TextView
+                    android:id="@+id/textView12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="27dp"
+                    android:layout_marginTop="21dp"
+                    android:fontFamily="sans-serif"
+                    android:letterSpacing="0.02"
+                    android:lineHeight="27.05dp"
+                    android:text="Bartolomeo"
+                    android:textColor="#3A333C"
+                    android:textFontWeight="700"
+                    android:textSize="25sp"
+                    android:textStyle="normal"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView8" />
+
+                <ImageView
+                    android:id="@+id/imageView10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="103dp"
+                    android:layout_marginTop="5dp"
+                    app:layout_constraintStart_toEndOf="@+id/textView12"
+                    app:layout_constraintTop_toTopOf="@+id/textView12"
+                    app:srcCompat="@drawable/clock"
+                    tools:ignore="VectorDrawableCompat" />
+
+                <TextView
+                    android:id="@+id/textView15"
+                    android:layout_width="69dp"
+                    android:layout_height="13dp"
+                    android:layout_marginLeft="9dp"
+                    android:layout_marginTop="3dp"
+                    android:fontFamily="sans-serif"
+                    android:lineHeight="12.98dp"
+                    android:text="10:00-22:00"
+                    android:textColor="#3E333F"
+                    android:textFontWeight="400"
+                    android:textSize="12sp"
+                    android:textStyle="normal"
+                    app:layout_constraintStart_toEndOf="@+id/imageView10"
+                    app:layout_constraintTop_toTopOf="@+id/imageView10" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/PlusOther"
+                android:layout_marginTop="270dp"
+                android:layout_width="343dp"
+                android:layout_height="35dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView12">
+
+                <ImageView
+                    android:id="@+id/imageView11"
+                    android:layout_width="81.25dp"
+                    android:layout_height="14.82dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="12.95dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/stars"
+                    tools:ignore="VectorDrawableCompat" />
+
+
+                <RelativeLayout
+                    android:id="@+id/butPod"
+                    android:layout_width="115dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="13dp"
+                    android:background="@null"
+                    android:clickable="true"
+                    android:onClick="Podrobnee"
+                    android:paddingTop="5dp"
+                    android:paddingRight="20dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <ImageView
+                        android:id="@+id/strelka"
+                        android:layout_width="12dp"
+                        android:layout_height="6dp"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginStart="0dp"
+                        android:layout_marginTop="5dp"
+                        app:srcCompat="@drawable/down_arrow"
+                        tools:ignore="VectorDrawableCompat" />
+
+                    <TextView
+                        android:id="@+id/butText"
+                        android:layout_width="68dp"
+                        android:layout_height="17dp"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="-2dp"
+                        android:layout_toEndOf="@+id/strelka"
+                        android:fontFamily="sans-serif-condensed"
+                        android:letterSpacing="0.05"
+                        android:lineHeight="15.23dp"
+                        android:onClick="Podrobnee"
+                        android:text="Подробнее"
+                        android:textColor="#C1C1C1"
+                        android:textFontWeight="400"
+                        android:textSize="13sp"
+                        android:textStyle="normal"
+                        app:layout_constraintStart_toEndOf="@+id/strelka" />
+
+                </RelativeLayout>
+
+                <TextView
+
+                    android:id="@+id/textView4"
+                    android:layout_width="350dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/podrobneeLay"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp"
+                    android:layout_marginTop="15dp"
+                    android:text="Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться. Lorem Ipsum используют потому, что тот обеспечивает более или менее стандартное заполнение шаблона"
+                    android:textAlignment="center"
+                    android:textSize="12dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/podrobneeLay" />
+
+
+                <com.google.android.flexbox.FlexboxLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginBottom="35dp"
+                    app:flexWrap="nowrap"
+                    app:justifyContent="space_around"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView4">
+
+                    <Button
+                        android:id="@+id/insta"
+                        android:layout_width="120dp"
+                        android:layout_height="53dp"
+                        android:background="@null"
+                        android:drawableLeft="@drawable/ic_soc_insta"
+                        android:paddingLeft="15dp"
+                        android:text="instagram"
+                        android:textAlignment="center"
+                        android:textAllCaps="false"
+                        android:textColor="@color/textDark"
+                        android:textSize="12dp" />
+
+                    <Button
+                        android:id="@+id/facebook"
+                        android:layout_width="120dp"
+                        android:layout_height="53dp"
+                        android:background="@null"
+                        android:drawableLeft="@drawable/ic_soc_insta"
+                        android:paddingLeft="15dp"
+                        android:text="facebook"
+                        android:textAlignment="center"
+                        android:textAllCaps="false"
+                        android:textColor="@color/textDark"
+                        android:textSize="12dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+                </com.google.android.flexbox.FlexboxLayout>
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>-->
+
+        </com.google.android.material.appbar.CollapsingToolbarLayout>
+
+        <com.google.android.flexbox.FlexboxLayout
+            android:id="@+id/frameLayout2"
+            android:layout_width="343dp"
+            android:layout_height="44dp"
+            android:layout_marginTop="25dp"
+            android:elevation="5dp"
+            android:layout_gravity="center"
+            app:flexDirection="row"
+            app:flexWrap="nowrap"
+            app:justifyContent="space_between"
+            app:layout_alignSelf="center">
+
+            <RelativeLayout
+                android:id="@+id/relativeLay1"
+                android:layout_width="150dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/button_shadow"
+                android:clickable="true"
+                android:onClick="all_menu">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/relativeImg1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="6dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/ic_menu_red" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/relativeBut1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="50dp"
+                    android:layout_marginTop="11dp"
+                    android:text="Всё меню"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="14dp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/relativeLay2"
+                android:layout_width="65dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/shadow"
+                android:clickable="true"
+                android:onClick="cold_platters">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/relativeImg2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="12dp"
+                    android:layout_marginTop="4dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/ic_cold_black" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/relativeBut2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="55dp"
+                    android:layout_marginTop="11dp"
+                    android:text=""
+                    android:textColor="@color/colorWhite"
+                    android:textSize="14dp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/relativeLay3"
+                android:layout_width="65dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/shadow"
+                android:clickable="true"
+                android:onClick="soups">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/relativeImg3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="6dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/ic_hot_black" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/relativeBut3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="57dp"
+                    android:layout_marginTop="11dp"
+                    android:text=""
+                    android:textColor="@color/colorWhite"
+                    android:textSize="14dp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/relativeLay4"
+                android:layout_width="65dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/shadow"
+                android:clickable="true"
+                android:onClick="beverages">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/relativeImg4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="19dp"
+                    android:layout_marginTop="8dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/ic_drink_black" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/relativeBut4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="55dp"
+                    android:layout_marginTop="11dp"
+                    android:text=""
+                    android:textColor="@color/colorWhite"
+                    android:textSize="14dp" />
+
+            </RelativeLayout>
+
+
+        </com.google.android.flexbox.FlexboxLayout>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/scroll_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FAFAFA"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="100dp">
+
+            <com.google.android.flexbox.FlexboxLayout
+                android:id="@+id/flexrestor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:elevation="5dp"
+                app:flexDirection="column"
+                app:justifyContent="center"
+                app:layout_alignSelf="center"
+                app:alignItems="center">
+            </com.google.android.flexbox.FlexboxLayout>
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+    <com.google.android.flexbox.FlexboxLayout
+        android:id="@+id/relativeLayout123"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/layout2"
+        android:clickable="true"
+        android:elevation="5dp"
+        android:onClick="Ordered"
+        android:layout_gravity="bottom"
+        app:alignItems="center"
+        app:flexDirection="row"
+        app:flexWrap="nowrap"
+        app:justifyContent="space_around"
+        app:layout_alignSelf="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TextView
+            android:id="@+id/textView27"
+            android:layout_width="61dp"
+            android:layout_height="17dp"
+
+            android:fontFamily="sans-serif-condensed"
+            android:letterSpacing="0.06"
+            android:text="Корзина"
+            android:textColor="#FFFFFF"
+            android:textFontWeight="700"
+            android:textSize="14sp"
+            android:textStyle="normal" />
+
+        <TextView
+            android:id="@+id/textView28"
+            android:layout_width="wrap_content"
+            android:layout_height="15dp"
+            android:fontFamily="sans-serif-condensed"
+            android:letterSpacing="0.06"
+            android:text="3500грн"
+            android:textColor="#FFFFFF"
+            android:textFontWeight="700"
+            android:textSize="14sp"
+            android:textStyle="normal" />
+    </com.google.android.flexbox.FlexboxLayout>
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    tools:context=".Saved_menu">
+
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Избранное"
+        android:textColor="@color/textDark"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        android:textFontWeight="2000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:id="@+id/scroll"
+        android:layout_width="match_parent"
+        android:layout_height="600dp"
+        android:layout_marginTop="19dp"
+        android:scrollbars="none"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView">
+        <com.google.android.flexbox.FlexboxLayout
+            android:id="@+id/flexmain"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_alignSelf="center"
+            app:flexDirection="column"
+            app:justifyContent="center"
+            app:alignContent="center"
+            app:alignItems="center">
+            <com.google.android.flexbox.FlexboxLayout
+                android:id="@+id/poisk"
+                android:layout_width="match_parent"
+                android:layout_height="59dp"
+                android:elevation="5dp"
+                app:flexDirection="row"
+                app:flexWrap="nowrap"
+                app:justifyContent="space_around"
+                app:layout_alignSelf="center"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/scroll">
+                <com.google.android.flexbox.FlexboxLayout
+                    android:layout_width="333dp"
+                    android:layout_height="59dp"
+                    android:elevation="5dp"
+                    app:flexDirection="row"
+                    app:flexWrap="nowrap"
+                    app:justifyContent="space_between"
+                    app:layout_alignSelf="center">
+
+                    <Button
+                        android:id="@+id/Restaurantsaved"
+                        android:layout_width="150dp"
+                        android:layout_height="53dp"
+                        android:background="@drawable/button_shadow"
+                        android:text="Рестораны"
+                        android:textAlignment="center"
+                        android:textAllCaps="false"
+                        android:textSize="13dp" />
+
+                    <Button
+                        android:id="@+id/Bluda"
+                        android:layout_width="150dp"
+                        android:layout_height="53dp"
+                        android:background="@drawable/shadow"
+                        android:text="Блюда"
+                        android:textAlignment="center"
+                        android:textAllCaps="false"
+                        android:textColor="@color/textDark" />
+                </com.google.android.flexbox.FlexboxLayout>
+            </com.google.android.flexbox.FlexboxLayout>
+            <TextView
+                android:id="@+id/myText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif"
+                android:layout_marginLeft="-300dp"
+                android:layout_marginTop="20dp"
+                android:text="Ресторанов"
+                android:textColor="@color/textSilver"
+                android:textFontWeight="700"
+                android:textSize="11dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/poisk" />
+
+
+            <com.google.android.flexbox.FlexboxLayout
+                android:id="@+id/flexsaved"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_alignSelf="center"
+                app:flexDirection="column"
+                app:justifyContent="center"
+                app:alignContent="center"
+                app:alignItems="center"
+                android:paddingBottom="80dp">
+
+
+
+            </com.google.android.flexbox.FlexboxLayout>
+        </com.google.android.flexbox.FlexboxLayout>
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

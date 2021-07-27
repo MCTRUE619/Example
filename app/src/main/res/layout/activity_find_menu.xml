@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    tools:context=".Find_menu">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="48dp"
+        android:layout_height="16dp"
+        android:layout_marginTop="20dp"
+        android:width="1000dp"
+        android:text="Поиск"
+        android:textColor="@color/textDark"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+
+    <AutoCompleteTextView
+        android:id="@+id/editTextText"
+        android:layout_width="343dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/shadow"
+        android:ems="10"
+        android:hint="Поиск"
+        android:inputType="text"
+        android:paddingLeft="53dp"
+        android:textColor="@color/textDark"
+        android:textColorHint="@color/textSilver"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        android:imeOptions="actionDone"/>
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="16dp"
+        android:layout_height="16dp"
+        android:layout_marginLeft="19dp"
+        android:clickable="false"
+        android:src="@drawable/ic_search_silver"
+        app:layout_constraintBottom_toBottomOf="@+id/editTextText"
+        app:layout_constraintStart_toStartOf="@+id/editTextText"
+        app:layout_constraintTop_toTopOf="@+id/editTextText"
+        tools:ignore="MissingConstraints,VectorDrawableCompat" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="530dp"
+        android:id="@+id/scroll"
+        android:layout_marginTop="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/relativeLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextText"
+        android:scrollbars="none">
+        <com.google.android.flexbox.FlexboxLayout
+            android:id="@+id/flexmain"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_alignSelf="center"
+            app:flexDirection="column"
+            app:justifyContent="center"
+            app:alignContent="center"
+            app:alignItems="center">
+    <com.google.android.flexbox.FlexboxLayout
+        android:id="@+id/Panel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="21dp"
+        android:elevation="5dp"
+        app:flexDirection="row"
+        app:justifyContent="space_around"
+        app:layout_constraintStart_toStartOf="@id/scroll"
+        app:layout_constraintTop_toBottomOf="@+id/scroll">
+
+        <com.google.android.flexbox.FlexboxLayout
+            android:layout_width="match_parent"
+            android:layout_height="59dp"
+            android:elevation="5dp"
+            app:flexDirection="row"
+            app:justifyContent="space_around">
+
+            <Button
+                android:id="@+id/Restaurant"
+                android:layout_width="125dp"
+                android:layout_height="53dp"
+                android:background="@drawable/button_shadow"
+                android:text="Рестораны"
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                android:textSize="13dp"/>
+
+            <Button
+                android:id="@+id/Kuhni"
+                android:layout_width="105dp"
+                android:layout_height="53dp"
+                android:background="@drawable/shadow"
+                android:text="Блюда"
+                android:textAllCaps="false"
+                android:textAlignment="center"
+                android:textColor="@color/textDark"/>
+
+
+        </com.google.android.flexbox.FlexboxLayout>
+    </com.google.android.flexbox.FlexboxLayout>
+
+
+
+
+        <com.google.android.flexbox.FlexboxLayout
+            android:id="@+id/flex"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_alignSelf="center"
+            app:flexDirection="column"
+            app:justifyContent="center"
+            app:alignContent="center"
+            app:alignItems="center"
+            android:paddingBottom="80dp">
+
+
+        </com.google.android.flexbox.FlexboxLayout>
+
+        </com.google.android.flexbox.FlexboxLayout>
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

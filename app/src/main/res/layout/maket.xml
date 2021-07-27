@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <com.google.android.flexbox.FlexboxLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout_alignSelf="center"
+        flexDirection="column"
+        justifyContent="center"
+        alignContent="center"
+        alignItems="center"
+        android:paddingBottom="8dp">
+    <FrameLayout
+        android:layout_width="343dp"
+        android:layout_height="199dp"
+        android:layout_marginTop="23dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:paddingBottom="10dp"
+        android:background="@drawable/shadow">
+
+        <ImageView
+            android:id="@+id/test3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="0dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/lovely_sushi_here"
+            android:elevation="2dp"/>
+
+        <FrameLayout
+            android:id="@+id/frameLayout10"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="130dp"
+            android:padding="0dp"
+            android:elevation="3dp"
+            android:background="@color/colorWhite">
+
+            <TextView
+                android:id="@+id/textViewtegg"
+                android:padding="0dp"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:fontFamily="sans-serif"
+                android:textColor="@color/textDark"
+                android:textSize="20dp"
+                android:letterSpacing="0.02"
+                android:textFontWeight="1000" />
+            <TextView
+                android:id="@+id/textView26"
+                android:layout_marginTop="8.72dp"
+                android:layout_marginLeft="21dp"
+                android:padding="0dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif"
+                android:textColor="@color/textDark"
+                android:textSize="20dp"
+                android:letterSpacing="0.02"
+                android:textFontWeight="1000"
+                android:text="Bansai" />
+            <TextView
+                android:id="@+id/textViewstar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:layout_marginLeft="18dp"
+                android:textColor="@color/textDark"
+                android:fontFamily="sans-serif"
+                android:textSize="16dp"
+                android:textFontWeight="700"
+                android:text="2.5" />
+            <ImageView
+                android:id="@+id/imageView31"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginLeft="41dp"
+                android:src="@drawable/gratis_png_icono_de_estrella_ico_naranja_splat_s_thumbnail" />
+
+
+                <TextView
+                    android:id="@+id/textView35"
+                    android:layout_marginTop="40dp"
+                    android:layout_marginLeft="134dp"
+                    android:textColor="@color/textDark"
+                    android:padding="0dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif"
+                    android:textSize="11dp"
+                    android:textFontWeight="700"
+                    android:text="20:00" />
+
+        </FrameLayout>
+
+    </FrameLayout>
+    </com.google.android.flexbox.FlexboxLayout>
+</LinearLayout>

@@ -1,0 +1,460 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite">
+
+    <com.denzcoskun.imageslider.ImageSlider
+        android:id="@+id/viewPager2"
+        android:layout_width="match_parent"
+        android:layout_height="186dp"
+        app:delay="0"
+        app:error_image="@drawable/dish1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/frame"
+        app:placeholder="@drawable/layout5" />
+
+
+    <com.google.android.flexbox.FlexboxLayout
+        android:id="@+id/frame"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        app:alignItems="center"
+        app:justifyContent="space_between"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageButton
+            android:id="@+id/imageButton4"
+            android:layout_width="20.25dp"
+            android:layout_height="16.25dp"
+            android:background="@color/white"
+            android:onClick="return_Rest"
+            android:src="@drawable/arrow2" />
+
+        <TextView
+            android:id="@+id/textView21"
+            android:layout_width="wrap_content"
+            android:layout_height="16dp"
+            android:fontFamily="sans-serif"
+            android:letterSpacing="0.02"
+            android:lineHeight="16.23dp"
+            android:text="Bartolomeo"
+            android:textColor="#3A333C"
+            android:textFontWeight="700"
+            android:textSize="15dp"
+            android:textStyle="bold" />
+
+        <ImageButton
+            android:id="@+id/imageButton12"
+            android:layout_width="26.68dp"
+            android:layout_height="23.86dp"
+            android:background="@color/white"
+            android:onClick="likeClick"
+            app:srcCompat="@drawable/vector" />
+    </com.google.android.flexbox.FlexboxLayout>
+
+    <TextView
+        android:id="@+id/textView29"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_marginTop="50dp"
+        android:fontFamily="sans-serif-condensed"
+        android:letterSpacing="0.06"
+        android:lineHeight="27.05dp"
+        android:text="Маргаритэ"
+        android:textColor="#000000"
+        android:textFontWeight="700"
+        android:textSize="25sp"
+        android:textStyle="normal"
+        app:layout_constraintEnd_toEndOf="@+id/viewPager2"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/viewPager2" />
+
+    <TextView
+        android:id="@+id/textView30"
+        android:layout_width="32dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="29dp"
+        android:layout_marginRight="65dp"
+        android:fontFamily="sans-serif-condensed"
+        android:lineHeight="19.7dp"
+        android:text="Цена:"
+        android:textAlignment="center"
+        android:textColor="#3A333B"
+        android:textFontWeight="400"
+        android:textSize="12sp"
+        android:textStyle="normal"
+        app:layout_constraintEnd_toStartOf="@+id/textView29"
+        app:layout_constraintTop_toBottomOf="@+id/textView29" />
+
+    <TextView
+        android:id="@+id/textView36"
+        android:layout_width="wrap_content"
+        android:layout_height="33dp"
+        android:fontFamily="sans-serif-condensed"
+        android:lineHeight="32.84dp"
+        android:text="350 грн"
+        android:textAlignment="center"
+        android:textColor="#3A333B"
+        android:textSize="20sp"
+        android:textStyle="normal"
+        app:layout_constraintStart_toStartOf="@+id/textView30"
+        app:layout_constraintTop_toBottomOf="@+id/textView30" />
+
+    <TextView
+        android:id="@+id/textView39"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="57dp"
+        android:fontFamily="sans-serif-condensed"
+        android:lineHeight="19.7dp"
+        android:text="(200 гр)"
+        android:textAlignment="center"
+        android:textFontWeight="400"
+        android:textSize="12sp"
+        android:textStyle="normal"
+        app:layout_constraintStart_toEndOf="@+id/textView36"
+        app:layout_constraintTop_toBottomOf="@+id/textView29" />
+
+    <TextView
+        android:id="@+id/textView40"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:fontFamily="sans-serif"
+        android:lineHeight="19.53dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:text="Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться. Lorem Ipsum используют потому, что тот обеспечивает более или менее стандартное заполнение шаблона,"
+        android:textAlignment="center"
+        android:textColor="#909090"
+        android:textFontWeight="400"
+        android:textSize="11sp"
+        android:textStyle="normal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView36" />
+
+    <TextView
+        android:id="@+id/textView44"
+        android:layout_width="135dp"
+        android:layout_height="18dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="sans-serif-condensed"
+        android:lineHeight="18.06dp"
+        android:text="Вместе с этим, выбирают:"
+        android:textAlignment="center"
+        android:textColor="#2B2B2B"
+        android:textFontWeight="400"
+        android:textSize="11sp"
+        android:textStyle="normal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView40" />
+
+    <HorizontalScrollView
+        android:id="@+id/scroll"
+        android:layout_width="match_parent"
+        android:layout_height="97dp"
+        android:scrollbars="none"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView44"
+        tools:ignore="MissingConstraints">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="97dp"
+            android:orientation="horizontal"
+            tools:layout_editor_absoluteX="1dp"
+            tools:layout_editor_absoluteY="57dp">
+
+            <FrameLayout
+                android:layout_width="180dp"
+                android:layout_height="97dp">
+
+                <ImageView
+                    android:id="@+id/imageView7"
+                    android:layout_width="78dp"
+                    android:layout_height="77dp"
+                    android:layout_marginLeft="6dp"
+                    android:layout_marginTop="12dp"
+                    app:srcCompat="@drawable/purepng_1"
+                    tools:layout_editor_absoluteX="50dp"
+                    tools:layout_editor_absoluteY="395dp" />
+
+                <TextView
+                    android:id="@+id/textView45"
+                    android:layout_width="wrap_content"
+                    android:layout_height="13dp"
+                    android:layout_marginLeft="76dp"
+                    android:layout_marginTop="29dp"
+                    android:fontFamily="sans-serif"
+                    android:lineHeight="12.98dp"
+                    android:text="Сладкая вишня"
+                    android:textColor="#000000"
+                    android:textFontWeight="700"
+                    android:textSize="12sp"
+                    android:textStyle="normal" />
+
+                <TextView
+                    android:id="@+id/textView46"
+                    android:layout_width="wrap_content"
+                    android:layout_height="12dp"
+                    android:layout_marginLeft="76dp"
+                    android:layout_marginTop="54dp"
+                    android:fontFamily="sans-serif"
+                    android:lineHeight="11.9dp"
+                    android:text="200грн"
+                    android:textColor="#3A333B"
+                    android:textFontWeight="400"
+                    android:textSize="11sp"
+                    android:textStyle="normal" />
+
+                <ImageButton
+                    android:id="@+id/imageButton13"
+                    android:layout_width="27dp"
+                    android:layout_height="27dp"
+                    android:layout_marginLeft="151dp"
+                    android:layout_marginTop="48dp"
+                    android:paddingBottom="3dp"
+                    app:srcCompat="@drawable/plus"
+                    tools:ignore="VectorDrawableCompat" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="180dp"
+                android:layout_height="97dp">
+
+                <ImageView
+                    android:id="@+id/imageView8"
+                    android:layout_width="78dp"
+                    android:layout_height="77dp"
+                    android:layout_marginTop="12dp"
+                    app:srcCompat="@drawable/dish2"
+                    tools:layout_editor_absoluteX="50dp"
+                    tools:layout_editor_absoluteY="395dp" />
+
+                <TextView
+                    android:id="@+id/textView47"
+                    android:layout_width="wrap_content"
+                    android:layout_height="13dp"
+                    android:layout_marginLeft="76dp"
+                    android:layout_marginTop="29dp"
+                    android:fontFamily="sans-serif-condensed"
+                    android:lineHeight="12.98dp"
+                    android:text="Рыбка под соусом"
+                    android:textColor="#000000"
+                    android:textFontWeight="700"
+                    android:textSize="12sp"
+                    android:textStyle="normal" />
+
+                <TextView
+                    android:id="@+id/textView48"
+                    android:layout_width="wrap_content"
+                    android:layout_height="12dp"
+                    android:layout_marginLeft="76dp"
+                    android:layout_marginTop="54dp"
+                    android:fontFamily="sans-serif"
+                    android:lineHeight="11.9dp"
+                    android:text="1200грн"
+                    android:textColor="#3A333B"
+                    android:textFontWeight="400"
+                    android:textSize="11sp"
+                    android:textStyle="normal" />
+
+                <ImageButton
+                    android:id="@+id/imageButton14"
+                    android:layout_width="27dp"
+                    android:layout_height="27dp"
+                    android:layout_marginLeft="151dp"
+                    android:layout_marginTop="48dp"
+                    android:paddingBottom="3dp"
+                    app:srcCompat="@drawable/plus"
+                    tools:ignore="VectorDrawableCompat" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="180dp"
+                android:layout_height="97dp">
+
+                <ImageView
+                    android:id="@+id/imageView9"
+                    android:layout_width="78dp"
+                    android:layout_height="77dp"
+                    android:layout_marginLeft="6dp"
+                    android:layout_marginTop="12dp"
+                    app:srcCompat="@drawable/purepng_1"
+                    tools:layout_editor_absoluteX="50dp"
+                    tools:layout_editor_absoluteY="395dp" />
+
+                <TextView
+                    android:id="@+id/textView49"
+                    android:layout_width="wrap_content"
+                    android:layout_height="13dp"
+                    android:layout_marginLeft="76dp"
+                    android:layout_marginTop="29dp"
+                    android:fontFamily="sans-serif"
+                    android:lineHeight="12.98dp"
+                    android:text="Сладкая вишня"
+                    android:textColor="#000000"
+                    android:textFontWeight="700"
+                    android:textSize="12sp"
+                    android:textStyle="normal" />
+
+                <TextView
+                    android:id="@+id/textView50"
+                    android:layout_width="wrap_content"
+                    android:layout_height="12dp"
+                    android:layout_marginLeft="76dp"
+                    android:layout_marginTop="54dp"
+                    android:fontFamily="sans-serif"
+                    android:lineHeight="11.9dp"
+                    android:text="200грн"
+                    android:textColor="#3A333B"
+                    android:textFontWeight="400"
+                    android:textSize="11sp"
+                    android:textStyle="normal" />
+
+                <ImageButton
+                    android:id="@+id/imageButton15"
+                    android:layout_width="27dp"
+                    android:layout_height="27dp"
+                    android:layout_marginLeft="151dp"
+                    android:layout_marginTop="48dp"
+                    android:paddingBottom="3dp"
+                    app:srcCompat="@drawable/plus"
+                    tools:ignore="VectorDrawableCompat" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="180dp"
+                android:layout_height="97dp">
+
+                <ImageView
+                    android:id="@+id/imageView10"
+                    android:layout_width="78dp"
+                    android:layout_height="77dp"
+                    android:layout_marginTop="12dp"
+                    app:srcCompat="@drawable/dish2"
+                    tools:layout_editor_absoluteX="50dp"
+                    tools:layout_editor_absoluteY="395dp" />
+
+                <TextView
+                    android:id="@+id/textView53"
+                    android:layout_width="wrap_content"
+                    android:layout_height="13dp"
+                    android:layout_marginLeft="76dp"
+                    android:layout_marginTop="29dp"
+                    android:fontFamily="sans-serif-condensed"
+                    android:lineHeight="12.98dp"
+                    android:text="Рыбка под соусом"
+                    android:textColor="#000000"
+                    android:textFontWeight="700"
+                    android:textSize="12sp"
+                    android:textStyle="normal" />
+
+                <TextView
+                    android:id="@+id/textView54"
+                    android:layout_width="wrap_content"
+                    android:layout_height="12dp"
+                    android:layout_marginLeft="76dp"
+                    android:layout_marginTop="54dp"
+                    android:fontFamily="sans-serif"
+                    android:lineHeight="11.9dp"
+                    android:text="1200грн"
+                    android:textColor="#3A333B"
+                    android:textFontWeight="400"
+                    android:textSize="11sp"
+                    android:textStyle="normal" />
+
+                <ImageButton
+                    android:id="@+id/imageButton16"
+                    android:layout_width="27dp"
+                    android:layout_height="27dp"
+                    android:layout_marginLeft="151dp"
+                    android:layout_marginTop="48dp"
+                    android:paddingBottom="3dp"
+                    app:srcCompat="@drawable/plus"
+                    tools:ignore="VectorDrawableCompat" />
+            </FrameLayout>
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <Button
+        android:id="@+id/button7"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/layout2"
+        android:elevation="1dp"
+        android:fontFamily="sans-serif"
+        android:lineHeight="15.15dp"
+        android:text="Добавить в корзину"
+        android:textColor="#FFFFFF"
+        android:textFontWeight="400"
+        android:textSize="14sp"
+        android:textStyle="normal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+    <com.google.android.flexbox.FlexboxLayout
+        android:layout_width="107dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/shadow"
+        app:flexDirection="row"
+        app:justifyContent="space_around"
+        app:layout_constraintStart_toEndOf="@+id/textView29"
+        app:layout_constraintTop_toBottomOf="@+id/textView29">
+
+
+        <ImageButton
+            android:layout_width="18dp"
+            android:layout_height="12dp"
+            android:background="@color/white"
+            android:onClick="minus"
+            android:paddingTop="3.5dp"
+            android:paddingBottom="3dp"
+            app:srcCompat="@drawable/minus"
+            tools:ignore="VectorDrawableCompat" />
+
+        <TextView
+            android:id="@+id/iterator"
+            android:layout_width="wrap_content"
+            android:layout_height="13dp"
+            android:layout_marginLeft="1dp"
+            android:layout_marginRight="1dp"
+            android:fontFamily="sans-serif"
+            android:letterSpacing="0.06"
+            android:lineHeight="12.98dp"
+            android:paddingTop="10dp"
+            android:text="1"
+            android:textColor="#3E333F"
+            android:textFontWeight="500"
+            android:textSize="16dp"
+            android:textStyle="normal" />
+
+        <ImageButton
+            android:layout_width="20dp"
+            android:layout_height="15dp"
+            android:onClick="plus"
+            android:paddingBottom="3dp"
+            app:srcCompat="@drawable/plus"
+            tools:ignore="VectorDrawableCompat" />
+
+    </com.google.android.flexbox.FlexboxLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

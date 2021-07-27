@@ -1,0 +1,441 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite">
+
+
+    <TextView
+        android:id="@+id/textView31"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:fontFamily="sans-serif"
+        android:letterSpacing="0.02"
+        android:lineHeight="16.23dp"
+        android:text="Оформление заказа"
+        android:textColor="@color/textDark"
+        android:textFontWeight="700"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        android:layout_alignParentTop="true"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView28"
+        android:layout_width="20.25dp"
+        android:layout_height="16.25dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="15dp"
+        android:onClick="back"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/arrow2"
+        tools:ignore="VectorDrawableCompat" />
+
+    <ScrollView
+        android:id="@+id/scroll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:scrollbars="none"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView31"
+        tools:ignore="MissingConstraints">
+
+
+
+        <com.google.android.flexbox.FlexboxLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:justifyContent="center"
+            app:alignItems="center"
+            app:flexDirection="column"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <com.google.android.flexbox.FlexboxLayout
+                android:id="@+id/flexorder"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:justifyContent="center"
+                app:alignItems="center"
+                app:layout_alignSelf="center"
+                app:flexDirection="column"
+                app:layout_constraintTop_toTopOf="parent">
+
+
+
+            </com.google.android.flexbox.FlexboxLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/More"
+                android:layout_width="140dp"
+                android:layout_height="12dp"
+                android:layout_marginTop="37dp"
+                android:onClick="showMore"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/relativeLayout3">
+
+                <TextView
+                    android:id="@+id/textView43"
+                    android:layout_width="122dp"
+                    android:layout_height="12dp"
+                    android:fontFamily="sans-serif"
+                    android:lineHeight="11.9dp"
+                    android:text="Посмотреть весь заказ"
+                    android:textColor="#959595"
+                    android:textFontWeight="400"
+                    android:textSize="11sp"
+                    android:textStyle="normal" />
+
+                <ImageView
+                    android:id="@+id/imageView32"
+                    android:layout_width="10dp"
+                    android:layout_height="5dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="126dp"
+                    android:layout_marginTop="6dp"
+                    app:srcCompat="@drawable/down_arrow"
+                    tools:ignore="VectorDrawableCompat"
+                    tools:layout_editor_absoluteX="262dp"
+                    tools:layout_editor_absoluteY="304dp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="340dp"
+                android:layout_height="55dp"
+                android:layout_marginTop="32dp">
+
+                <TextView
+                    android:layout_width="145dp"
+                    android:layout_height="22dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginTop="0dp"
+                    android:fontFamily="sans-serif-condensed"
+                    android:lineHeight="19.47dp"
+                    android:text="Сколько персон?"
+                    android:textColor="@color/slider2"
+                    android:textFontWeight="700"
+                    android:textSize="18sp"
+                    android:textStyle="normal" />
+
+                <TextView
+                    android:layout_width="189dp"
+                    android:layout_height="29dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="25dp"
+                    android:fontFamily="sans-serif"
+                    android:lineHeight="15.92dp"
+                    android:text="На какое количество людей нам сервировать"
+                    android:textColor="#A1A1A1"
+                    android:textFontWeight="400"
+                    android:textSize="12sp"
+                    android:textStyle="normal" />
+
+                <com.google.android.flexbox.FlexboxLayout
+                    android:layout_width="91dp"
+                    android:layout_height="41dp"
+                    android:layout_marginStart="270dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/shadow"
+                    app:flexDirection="row"
+                    app:justifyContent="space_around">
+
+
+                    <ImageButton
+                        android:layout_width="12dp"
+                        android:layout_height="12dp"
+                        android:background="@color/white"
+                        android:onClick="minus"
+                        android:paddingTop="3.5dp"
+                        android:paddingBottom="3dp"
+                        app:srcCompat="@drawable/minus"
+                        tools:ignore="VectorDrawableCompat" />
+
+                    <TextView
+                        android:id="@+id/orderperson"
+                        android:layout_width="wrap_content"
+                        android:layout_height="13dp"
+                        android:layout_marginLeft="1dp"
+                        android:layout_marginRight="1dp"
+                        android:fontFamily="sans-serif"
+                        android:letterSpacing="0.06"
+                        android:lineHeight="12.98dp"
+                        android:paddingTop="6dp"
+                        android:text="1"
+                        android:textColor="#3E333F"
+                        android:textFontWeight="500"
+                        android:textSize="18dp"
+                        android:textStyle="normal" />
+
+                    <ImageButton
+                        android:layout_width="12dp"
+                        android:layout_height="12dp"
+                        android:onClick="plus"
+                        android:paddingBottom="3dp"
+                        app:srcCompat="@drawable/plus"
+                        tools:ignore="VectorDrawableCompat" />
+
+                </com.google.android.flexbox.FlexboxLayout>
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="332dp"
+                android:layout_height="2dp"
+                android:layout_marginTop="17dp"
+                android:background="#F0F0F0" />
+
+            <RelativeLayout
+                android:layout_width="338dp"
+                android:layout_height="106dp"
+                android:layout_marginTop="26dp">
+
+                <TextView
+                    android:layout_width="166dp"
+                    android:layout_height="22dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginTop="0dp"
+                    android:fontFamily="sans-serif"
+                    android:lineHeight="19.47dp"
+                    android:text="Контактный номер"
+                    android:textColor="@color/slider2"
+                    android:textFontWeight="700"
+                    android:textSize="18sp"
+                    android:textStyle="normal" />
+
+                <TextView
+                    android:layout_width="249dp"
+                    android:layout_height="15dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginTop="26dp"
+                    android:lineHeight="12.98dp"
+                    android:text="тут отображается контактный номер"
+                    android:textColor="#A1A1A1"
+                    android:textFontWeight="400"
+                    android:textSize="12sp"
+                    android:textStyle="normal" />
+
+                <Button
+                    android:id="@+id/buttonphone"
+                    android:layout_width="336dp"
+                    android:layout_height="48dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="2dp"
+                    android:layout_marginTop="58dp"
+                    android:background="@drawable/shadow"
+                    android:fontFamily="sans-serif"
+                    android:lineHeight="15.15dp"
+                    android:text="+38 095 555 55 55"
+                    android:textColor="@color/slider2"
+                    android:textFontWeight="400"
+                    android:textSize="14sp"
+                    android:textStyle="normal" />
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="332dp"
+                android:layout_height="2dp"
+                android:layout_marginTop="17dp"
+                android:background="#F0F0F0" />
+
+            <RelativeLayout
+                android:layout_width="338dp"
+                android:layout_height="81dp"
+                android:layout_marginTop="26dp">
+
+                <TextView
+                    android:layout_width="131dp"
+                    android:layout_height="22dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginTop="0dp"
+                    android:fontFamily="sans-serif"
+                    android:lineHeight="19.47dp"
+                    android:text="Способ оплаты"
+                    android:textColor="@color/slider2"
+                    android:textFontWeight="700"
+                    android:textSize="18sp"
+                    android:textStyle="normal" />
+
+                <Button
+                    android:layout_width="336dp"
+                    android:layout_height="48dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="2dp"
+                    android:layout_marginTop="33dp"
+                    android:background="@drawable/orderbutton3"
+                    android:fontFamily="sans-serif"
+
+                    android:lineHeight="15.15dp"
+                    android:text="Наличный"
+                    android:textColor="@color/slider2"
+                    android:textFontWeight="400"
+                    android:textSize="14sp"
+                    android:textStyle="normal" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="338dp"
+                android:layout_height="17dp"
+                android:layout_marginTop="22dp">
+
+                <TextView
+                    android:layout_width="48dp"
+                    android:layout_height="17dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:fontFamily="sans-serif-condensed"
+                    android:lineHeight="15.15dp"
+                    android:text="Сумма:"
+                    android:textColor="#898989"
+                    android:textFontWeight="400"
+                    android:textStyle="normal" />
+
+                <TextView
+                    android:id="@+id/summazakaza"
+                    android:layout_width="wrap_content"
+                    android:layout_height="17dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="280dp"
+                    android:fontFamily="sans-serif-condensed"
+                    android:lineHeight="15.15dp"
+                    android:text="5"
+                    android:textColor="#898989"
+                    android:textFontWeight="400"
+                    android:textStyle="normal" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="338dp"
+                android:layout_height="17dp"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:layout_width="71dp"
+                    android:layout_height="17dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:fontFamily="sans-serif-condensed"
+                    android:lineHeight="15.15dp"
+                    android:text="Промокод:"
+                    android:textColor="#898989"
+                    android:textFontWeight="400"
+                    android:textStyle="normal" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="17dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="280dp"
+                    android:fontFamily="sans-serif-condensed"
+                    android:lineHeight="15.15dp"
+                    android:text="0грн"
+                    android:textColor="#898989"
+                    android:textFontWeight="400"
+                    android:textStyle="normal" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="338dp"
+                android:layout_height="17dp"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:layout_width="67dp"
+                    android:layout_height="17dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:fontFamily="sans-serif-condensed"
+                    android:lineHeight="15.15dp"
+                    android:text="Доставка:"
+                    android:textColor="#898989"
+                    android:textFontWeight="400"
+                    android:textStyle="normal" />
+
+                <TextView
+                    android:id="@+id/summadostavki"
+                    android:layout_width="wrap_content"
+                    android:layout_height="17dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="280dp"
+                    android:fontFamily="sans-serif-condensed"
+                    android:lineHeight="15.15dp"
+                    android:text="50грн"
+                    android:textColor="#898989"
+                    android:textFontWeight="400"
+                    android:textStyle="normal" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="338dp"
+                android:layout_height="22dp"
+                android:layout_marginTop="21dp">
+
+                <TextView
+                    android:layout_width="125dp"
+                    android:layout_height="22dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:fontFamily="sans-serif-condensed"
+                    android:lineHeight="19.47dp"
+                    android:text="Сумма заказа:"
+                    android:textColor="@color/slider2"
+                    android:textFontWeight="700"
+                    android:textSize="18sp"
+                    android:textStyle="normal" />
+
+                <TextView
+                    android:id="@+id/itogsummazakaza"
+                    android:layout_width="wrap_content"
+                    android:layout_height="22dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="260dp"
+                    android:fontFamily="sans-serif-condensed"
+                    android:lineHeight="19.47dp"
+                    android:text="12350грн"
+                    android:textColor="@color/slider2"
+                    android:textFontWeight="700"
+                    android:textSize="18sp"
+                    android:textStyle="normal" />
+            </RelativeLayout>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="59dp"
+                android:layout_marginTop="41dp"
+                android:layout_marginBottom="70dp"
+                android:background="@drawable/buttoncircle2"
+                android:fontFamily="sans-serif"
+                android:lineHeight="15.15dp"
+                android:onClick="confirm"
+                android:text="ПОДТВЕРДИТЬ ЗАКАЗ"
+                android:textColor="@color/white"
+                android:textFontWeight="700"
+                android:textSize="14sp"
+                android:textStyle="normal" />
+        </com.google.android.flexbox.FlexboxLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

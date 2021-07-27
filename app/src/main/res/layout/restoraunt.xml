@@ -1,0 +1,399 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite">
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="391dp"
+        android:layout_height="match_parent"
+        android:scrollbars="none"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <com.google.android.flexbox.FlexboxLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="80dp"
+                app:alignContent="center"
+                app:alignItems="center"
+                app:flexDirection="column"
+                app:justifyContent="center"
+                app:layout_alignSelf="center">
+
+                <com.google.android.flexbox.FlexboxLayout
+                    android:id="@+id/frameLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="24dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:elevation="5dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    app:flexDirection="row"
+                    app:flexWrap="nowrap"
+                    app:justifyContent="space_between"
+                    app:layout_alignSelf="center">
+
+
+                    <ImageView
+                        android:id="@+id/imageView28"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:onClick="openRestaurantMenu"
+                        app:srcCompat="@drawable/arrow2"
+                        tools:ignore="VectorDrawableCompat" />
+
+                    <Button
+                        android:id="@+id/Rating"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/rect_img"
+                        android:onClick="rating"
+                        android:text="Оценить"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="14dp" />
+
+                    <Button
+                        android:id="@+id/Otziv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/rect_img"
+                        android:onClick="otziv"
+                        android:text="Оставить отзыв"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="14dp" />
+
+                    <Button
+                        android:id="@+id/Otzivs"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/rect_img"
+                        android:onClick="otzivs"
+                        android:text="Отзывы"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="14dp" />
+
+                </com.google.android.flexbox.FlexboxLayout>
+
+                <ImageView
+                    android:id="@+id/viewPager3"
+                    android:layout_width="343dp"
+                    android:layout_height="186dp"
+
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/frameLayout" />
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="343dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp">
+
+                    <TextView
+                        android:id="@+id/restopen"
+                        android:layout_width="wrap_content"
+                        android:layout_height="27dp"
+                        android:layout_marginTop="21dp"
+                        android:fontFamily="sans-serif"
+                        android:letterSpacing="0.02"
+                        android:lineHeight="27.05dp"
+                        android:text="Bartolomeo"
+                        android:textColor="#3A333C"
+                        android:textFontWeight="700"
+                        android:textSize="25sp"
+                        android:textStyle="normal"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/textView8" />
+
+                    <ImageView
+                        android:id="@+id/imageView10"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="103dp"
+                        android:layout_marginTop="5dp"
+                        app:layout_constraintStart_toEndOf="@+id/restopen"
+                        app:layout_constraintTop_toTopOf="@+id/restopen"
+                        app:srcCompat="@drawable/clock"
+                        tools:ignore="VectorDrawableCompat" />
+
+                    <TextView
+                        android:id="@+id/timeopen"
+                        android:layout_width="69dp"
+                        android:layout_height="13dp"
+                        android:layout_marginLeft="9dp"
+                        android:layout_marginTop="3dp"
+                        android:fontFamily="sans-serif"
+                        android:lineHeight="12.98dp"
+                        android:text="10:00-22:00"
+                        android:textColor="#3E333F"
+                        android:textFontWeight="400"
+                        android:textSize="12sp"
+                        android:textStyle="normal"
+                        app:layout_constraintStart_toEndOf="@+id/imageView10"
+                        app:layout_constraintTop_toTopOf="@+id/imageView10" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/PlusOther"
+                    android:layout_width="343dp"
+                    android:layout_height="35dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView12">
+
+                    <TextView
+                        android:id="@+id/restozenka"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="9.95dp"
+                        android:fontFamily="sans-serif"
+                        android:letterSpacing="0.02"
+                        android:lineHeight="27.05dp"
+                        android:text="q"
+                        android:textColor="#3A333C"
+                        android:textFontWeight="700"
+                        android:textSize="14sp"
+                        android:textStyle="normal"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <ImageView
+                        android:id="@+id/imageView11"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginLeft="37dp"
+                        android:layout_marginTop="9.95dp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:srcCompat="@drawable/gratis_png_icono_de_estrella_ico_naranja_splat_s_thumbnail"
+                        tools:ignore="VectorDrawableCompat" />
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <com.google.android.flexbox.FlexboxLayout
+                    android:id="@+id/frameLayout2"
+                    android:layout_width="343dp"
+                    android:layout_height="44dp"
+                    android:layout_marginTop="5dp"
+                    android:elevation="5dp"
+                    app:flexDirection="row"
+                    app:flexWrap="nowrap"
+                    app:justifyContent="space_between"
+                    app:layout_alignSelf="center">
+
+                    <RelativeLayout
+                        android:id="@+id/relativeLay1R"
+                        android:layout_width="150dp"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/button_shadow"
+                        android:clickable="true"
+                        android:onClick="all_menu">
+
+                        <androidx.appcompat.widget.AppCompatImageView
+                            android:id="@+id/relativeImg1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentStart="true"
+                            android:layout_alignParentTop="true"
+                            android:layout_marginStart="15dp"
+                            android:layout_marginTop="6dp"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/ic_menu_red" />
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/relativeBut1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentStart="true"
+                            android:layout_alignParentTop="true"
+                            android:layout_marginStart="50dp"
+                            android:layout_marginTop="11dp"
+                            android:text="Всё меню"
+                            android:textColor="@color/colorWhite"
+                            android:textSize="14dp" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/relativeLay2R"
+                        android:layout_width="65dp"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/shadow"
+                        android:clickable="true"
+                        android:onClick="cold_platters">
+
+                        <androidx.appcompat.widget.AppCompatImageView
+                            android:id="@+id/relativeImg2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentStart="true"
+                            android:layout_alignParentTop="true"
+                            android:layout_marginStart="12dp"
+                            android:layout_marginTop="4dp"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/ic_cold_black" />
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/relativeBut2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentStart="true"
+                            android:layout_alignParentTop="true"
+                            android:layout_marginStart="55dp"
+                            android:layout_marginTop="11dp"
+                            android:text=""
+                            android:textColor="@color/colorWhite"
+                            android:textSize="14dp" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/relativeLay3R"
+                        android:layout_width="65dp"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/shadow"
+                        android:clickable="true"
+                        android:onClick="soups">
+
+                        <androidx.appcompat.widget.AppCompatImageView
+                            android:id="@+id/relativeImg3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentStart="true"
+                            android:layout_alignParentTop="true"
+                            android:layout_marginStart="15dp"
+                            android:layout_marginTop="6dp"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/ic_hot_black" />
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/relativeBut3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentStart="true"
+                            android:layout_alignParentTop="true"
+                            android:layout_marginStart="57dp"
+                            android:layout_marginTop="11dp"
+                            android:text=""
+                            android:textColor="@color/colorWhite"
+                            android:textSize="14dp" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/relativeLay4R"
+                        android:layout_width="65dp"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/shadow"
+                        android:clickable="true"
+                        android:onClick="beverages">
+
+                        <androidx.appcompat.widget.AppCompatImageView
+                            android:id="@+id/relativeImg4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentStart="true"
+                            android:layout_alignParentTop="true"
+                            android:layout_marginStart="19dp"
+                            android:layout_marginTop="8dp"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/ic_drink_black" />
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/relativeBut4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentStart="true"
+                            android:layout_alignParentTop="true"
+                            android:layout_marginStart="55dp"
+                            android:layout_marginTop="11dp"
+                            android:text=""
+                            android:textColor="@color/colorWhite"
+                            android:textSize="14dp" />
+
+                    </RelativeLayout>
+
+
+                </com.google.android.flexbox.FlexboxLayout>
+
+                <com.google.android.flexbox.FlexboxLayout
+                    android:id="@+id/flexrestor"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:elevation="5dp"
+                    app:alignItems="center"
+                    app:flexDirection="column"
+                    app:justifyContent="center"
+                    app:layout_alignSelf="center">
+
+                </com.google.android.flexbox.FlexboxLayout>
+            </com.google.android.flexbox.FlexboxLayout>
+        </LinearLayout>
+    </ScrollView>
+    <com.google.android.flexbox.FlexboxLayout
+        android:id="@+id/relativeLayout123"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/layout2"
+        android:clickable="true"
+        android:elevation="5dp"
+        android:onClick="Ordered"
+        app:alignItems="center"
+        app:flexDirection="row"
+        app:flexWrap="nowrap"
+        app:justifyContent="space_around"
+        app:layout_alignSelf="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TextView
+            android:id="@+id/textView27"
+            android:layout_width="61dp"
+            android:layout_height="17dp"
+
+            android:fontFamily="sans-serif-condensed"
+            android:letterSpacing="0.06"
+            android:text="Корзина"
+            android:textColor="#FFFFFF"
+            android:textFontWeight="700"
+            android:textSize="14sp"
+            android:textStyle="normal" />
+
+        <TextView
+            android:id="@+id/textView28"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-condensed"
+            android:letterSpacing="0.06"
+            android:text="цена"
+            android:textColor="#FFFFFF"
+            android:textFontWeight="700"
+            android:textSize="14sp"
+            android:textStyle="normal" />
+    </com.google.android.flexbox.FlexboxLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

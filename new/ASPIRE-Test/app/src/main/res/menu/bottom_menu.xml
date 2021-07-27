@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<item
+    android:id="@+id/menu"
+    android:title="menu"
+    android:icon="@drawable/ic_restaurants_black"/>
+    <item
+        android:id="@+id/find"
+        android:title="find"
+        android:icon="@drawable/ic_search_black"/>
+    <item
+        android:id="@+id/person"
+        android:title="person"
+        android:icon="@drawable/ic_person_black"/>
+    <item
+        android:id="@+id/saved"
+        android:title="saved"
+        android:icon="@drawable/bottom_heart_change"/>
+    <item
+        android:id="@+id/orders"
+        android:title="orders"
+        android:icon="@drawable/ic_basket_black"/>
+</menu>

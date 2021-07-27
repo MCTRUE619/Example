@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.google.android.flexbox.FlexboxLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:alignContent="center"
+        app:alignItems="center"
+        app:flexDirection="column"
+        app:justifyContent="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:layout_marginTop="-30dp"
+            android:id="@+id/imageView13"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:fitsSystemWindows="true"
+            android:src="@drawable/girl" />
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="62dp"
+            android:layout_height="27dp"
+            android:elevation="5dp"
+            android:layout_marginTop="-400dp"
+            android:layout_marginLeft="-150dp"
+            app:srcCompat="@drawable/logo2"
+            tools:ignore="VectorDrawableCompat" />
+
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_marginTop="416dp"
+            android:fontFamily="sans-serif-condensed"
+            android:gravity="center_horizontal"
+            android:lineHeight="30.29dp"
+            android:text="Хотите к нам?"
+            android:textColor="@color/slider"
+            android:textFontWeight="700"
+            android:textSize="28sp"
+            android:textStyle="normal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView13" />
+
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="324dp"
+            android:layout_height="34dp"
+            android:layout_marginTop="6dp"
+            android:fontFamily="sans-serif"
+            android:gravity="center_horizontal"
+            android:lineHeight="18.32dp"
+            android:text="На нашем сайте вы сможете создать собственый ресторан и управлять им "
+            android:textAlignment="center"
+            android:textColor="@color/slider2"
+            android:textFontWeight="400"
+            android:textSize="12sp"
+            android:textStyle="normal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView6" />
+
+        <Button
+            android:layout_width="275dp"
+            android:layout_height="43dp"
+            android:layout_marginTop="35dp"
+            android:background="@drawable/rectangle"
+            android:fontFamily="sans-serif"
+            android:lineHeight="15.15dp"
+            android:text="Перейти на aspire.ua"
+            android:textColor="@color/slider2"
+            android:textFontWeight="500"
+            android:textStyle="normal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView9" />
+    </com.google.android.flexbox.FlexboxLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
